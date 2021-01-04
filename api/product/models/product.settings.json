@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "restaurants",
+  "collectionName": "products",
   "info": {
-    "name": "Restaurant",
+    "name": "product",
     "description": ""
   },
   "options": {
@@ -11,21 +11,29 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "name": {
-      "type": "string"
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
     },
     "description": {
-      "type": "richtext"
+      "type": "text"
     },
-    "restaurant_id": {
-      "type": "uid"
+    "price": {
+      "type": "decimal"
     },
-    "logo": {
+    "quantity": {
+      "type": "integer"
+    },
+    "categories": {
+      "collection": "category",
+      "via": "products"
+    },
+    "media": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
         "images",
-        "files",
         "videos"
       ],
       "plugin": "upload",

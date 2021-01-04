@@ -25,12 +25,6 @@
     "strapi-plugin-users-permissions": "3.4.1",
     "strapi-utils": "3.4.1"
   },
-  "author": {
-    "name": "A Strapi developer"
-  },
-  "strapi": {
-    "uuid": "19312e64-b37f-4a3d-a535-cbd794e95603"
-  },
   "engines": {
     "node": ">=10.16.0 <=14.x.x",
     "npm": ">=6.0.0"
